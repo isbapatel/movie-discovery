@@ -26,8 +26,6 @@ Feature	Description
 
 ## 🧠 Project Architecture
 
-## 🧠 Project Architecture
-
 ```bash
 lib/
 │
