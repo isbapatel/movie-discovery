@@ -1,4 +1,4 @@
-#🎬 Movie Discovery App
+# 🎬 Movie Discovery App
 
 ##Flutter application for browsing movies using TMDB API with BLoC architecture and local persistent favorites.
 
