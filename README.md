@@ -15,6 +15,7 @@ BLoC State Management: Separate BLoCs for Auth, Movie List & Movie Details
 API Integration: TMDB REST API using HTTP package
 Error Handling:  Graceful UI messaging and retry option
 
+<<<<<<< HEAD
 
 🧠 Clean Architecture
 lib/
@@ -53,6 +54,36 @@ https://www.themoviedb.org/
 
 ⚠ Important Note
 
+=======
+🧠 Clean Architecture
+lib/
+│
+├── core/                   # Global constants & shared utility
+├── data/                   # Models + Services (API, Storage)
+│   ├── models/
+│   └── services/
+│
+├── logic/                  # Business Logic (BLoC + Events + States)
+│   ├── auth/
+│   └── movies/
+│
+└── presentation/           # All UI screens and widgets
+
+🛠 Tech Stack
+Flutter & Dart
+BLoC + Equatable
+HTTP package
+Shared Preferences
+TMDB API
+Android (tested physically)
+VSCode
+
+🌐 API Used
+The Movie Database (TMDB) API
+https://www.themoviedb.org/
+
+⚠ Important Note
+>>>>>>> e93f0bd005f61f953af8d3b8b975e643337b336c
 Some Indian ISPs (e.g., Jio / BSNL) block TMDB requests.
 If API responses fail or movies do not load, enable VPN (Cloudflare WARP).
 
@@ -72,6 +103,7 @@ flutter build apk --release
 
 
 APK path:
+<<<<<<< HEAD
 
 build/app/outputs/flutter-apk/app-release.apk
 
@@ -102,8 +134,40 @@ Recommendation system
 
 👤 Developed By
 
+=======
+build/app/outputs/flutter-apk/app-release.apk
+
+📸 Screenshots
+<p align="center">
+  <img src="assets/screenshots/splash.png" width="260"/>
+  <img src="assets/screenshots/login.png" width="260"/>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/landing.png" width="260"/>
+  <img src="assets/screenshots/details.png" width="260"/>
+</p>
+
+
+📥 APK Download
+Drive Link: https://drive.google.com/file/d/1t-u8trYyPBhrFvuWVOqkW8M_PcirP39Q/view?usp=drive_web
+
+🧠 Future Improvements
+Hero animations
+Shimmer loading placeholders
+Movie cast & reviews section
+Offline caching & database
+Dark mode UI
+Recommendation system
+
+👤 Developed By
+>>>>>>> e93f0bd005f61f953af8d3b8b975e643337b336c
 Isba Patel
 Computer Science Undergraduate | Flutter & AI/ML Developer
 📍 Pune, India
 📱 +91 9309025738
+<<<<<<< HEAD
 📧 isbapatel1205@gmail.com
+=======
+📧 isbapatel1205@gmail.com
+>>>>>>> e93f0bd005f61f953af8d3b8b975e643337b336c
