@@ -25,24 +25,25 @@ Feature	Description
 🧠 Clean Architecture	Folder-based structure with BLoC
 
 ## 🧠 Project Architecture
+
 lib/
 │
 ├── core/
-│   ├── constants/          # App strings, API constants
-│   ├── theme/              # App color definitions
-│   └── utils/              # Validators & helpers
+│ ├── constants/ # App strings, API constants
+│ ├── theme/ # App color definitions
+│ └── utils/ # Validators & shared helper functions
 │
 ├── data/
-│   ├── models/             # Movie & movie detail models
-│   └── services/           # API service & SharedPrefs wrapper
+│ ├── models/ # Movie & MovieDetail models
+│ └── services/ # API service & SharedPreferences storage
 │
 ├── logic/
-│   ├── auth/               # Auth BLoC, events & states
-│   └── movies/             # Movie list & detail BLoC
+│ ├── auth/ # Auth BLoC, events & states
+│ └── movies/ # MovieList & MovieDetail BLoC
 │
 └── presentation/
-    ├── screens/            # UI screens
-    └── widgets/            # Reusable widgets
+├── screens/ # UI screens (Splash, Login, Landing, Details)
+└── widgets/ # Reusable UI components (MovieTile, Loader)
 
 ## 🌐 API
 The Movie Database (TMDB)
