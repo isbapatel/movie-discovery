@@ -26,24 +26,29 @@ Feature	Description
 
 ## 🧠 Project Architecture
 
+## 🧠 Project Architecture
+
+```bash
 lib/
 │
 ├── core/
-│ ├── constants/ # App strings, API constants
-│ ├── theme/ # App color definitions
-│ └── utils/ # Validators & shared helper functions
+│   ├── constants/          # App strings, API constants
+│   ├── theme/              # App color definitions
+│   └── utils/              # Validators & helpers
 │
 ├── data/
-│ ├── models/ # Movie & MovieDetail models
-│ └── services/ # API service & SharedPreferences storage
+│   ├── models/             # Movie & MovieDetail models
+│   └── services/           # API service & SharedPreferences
 │
 ├── logic/
-│ ├── auth/ # Auth BLoC, events & states
-│ └── movies/ # MovieList & MovieDetail BLoC
+│   ├── auth/               # Authentication BLoC
+│   └── movies/             # MovieList & MovieDetail BLoC
 │
 └── presentation/
-├── screens/ # UI screens (Splash, Login, Landing, Details)
-└── widgets/ # Reusable UI components (MovieTile, Loader)
+    ├── screens/            # UI Screens
+    └── widgets/            # Reusable widgets
+```
+
 
 ## 🌐 API
 The Movie Database (TMDB)
